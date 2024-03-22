@@ -45,6 +45,8 @@ module Phlex
 						end
 					end
 
+				  fragments = nil
+
 					if block_given?
 						call(view_context: view_context, fragments: fragments) do |*args|
 							original_length = @_context.target.length
